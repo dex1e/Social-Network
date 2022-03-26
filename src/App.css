@@ -11,30 +11,10 @@
     "h h"
     "n c";
 
-
-
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
-
-
 }
 
-.header {
-  grid-area: h;
-  background-color: salmon;
-}
 
-.header img {
-  width: 30px;
-}
 
-.nav {
-  grid-area: n;
-  background-color: cadetblue;
-}
-
-.content {
-  grid-area: c;
-  background-color: gray;
-}

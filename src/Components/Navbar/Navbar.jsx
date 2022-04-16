@@ -4,7 +4,13 @@ import s from './Navbar.module.css'
 const setActive = (navData) => navData.isActive ? s.active : s.item
 // ----Есть видосы на ютубе про это, теперь не используется activeClassName------- 
 
+
+
+
+
 const Navbar = () => {
+
+
     return (
         <nav className={s.nav}>
             <div className={`${s.item} ${s.active}`}>

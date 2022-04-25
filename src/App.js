@@ -9,12 +9,7 @@ import News from './Components/News/News';
 import Music from './Components/Music/Music';
 import Options from './Components/Options/Options';
 
-
-
 const App = (props) => {
-
-
-
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
@@ -28,7 +23,11 @@ const App = (props) => {
               {<Dialogs state={props.state.dialogsPage} />} />
 
             <Route path='/profile' element=
-              {<Profile state={props.state.profilePage} />} />
+              {<Profile
+                profilePage={props.state.profilePage}
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
+              />} />
 
             <Route path='/news' element={<News />} />
             <Route path='/music' element={<Music />} />
